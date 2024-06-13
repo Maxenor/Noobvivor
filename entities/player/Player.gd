@@ -22,6 +22,7 @@ func _update_velocity(delta: float) -> void:
 		Input.get_action_strength("move_right") - Input.get_action_strength("move_left"),
 		Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
 	)
+	# fix for multiple inputs
 	var move_direction := input_vector.normalized()
 	var desired_velocity := speed * move_direction
 	var steering := desired_velocity - velocity
