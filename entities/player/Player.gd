@@ -5,9 +5,9 @@ extends CharacterBody2D
 @export var HurtBox: Area2D
 @export var ProgressBarHP: ProgressBar
 
-var health: int = 100
+var health: float = 100
 signal health_depleted
-const DAMAGE_RATE: float = 5.0
+const DAMAGE_RATE: float = 15
 
 func _process(delta: float) -> void:
 	_update_animation()
