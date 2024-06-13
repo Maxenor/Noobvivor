@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://oupq8x3yvub6"]
+
+[ext_resource type="PackedScene" uid="uid://bs7s6trdl1ysw" path="res://entities/player/player.tscn" id="1_w154c"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_w154c")]
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="Background"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
